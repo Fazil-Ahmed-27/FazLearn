@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About FazLearn</title>
+  <link rel="stylesheet" href="FazLearn.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    .typing {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 800px;
+    }
+    .highlight {
+      color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-black text-white font-['Space_Grotesk'] overflow-x-hidden">
+    <!-- Background elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-20 left-10 w-96 h-96 bg-indigo-900/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-900/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-40 right-20 w-64 h-64 bg-cyan-900/10 rounded-full blur-3xl"></div>
+        
+        <!-- Decorative grid lines -->
+        <div class="absolute inset-0 grid grid-cols-12 opacity-5 pointer-events-none">
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+            <div class="border-r border-cyan-500"></div>
+        </div>
+        <div class="absolute inset-0 grid grid-rows-12 opacity-5 pointer-events-none">
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+            <div class="border-b border-cyan-500"></div>
+        </div>
+    </div>
+<!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-lg border-b border-cyan-500/30 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="relative mr-2">
+                        <div class="absolute inset-0 bg-cyan-400/30 rounded-md blur-sm"></div>
+                        <div class="w-10 h-10 rounded-md bg-gradient-to-br from-indigo-600 to-purple-600 border border-indigo-400/30 flex items-center justify-center relative shadow-lg shadow-indigo-800/20">
+                            <div class="absolute inset-[3px] bg-gray-900 rounded-[4px] flex items-center justify-center overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-purple-900/20"></div>
+                                <div class="font-bold text-lg bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">FA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-medium bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent flex items-center">
+                        FazLearn
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html#home" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Home</a>
+                    <a href="index.html#about" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">About</a>
+                    <a href="index.html#services" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Services</a>
+                    <a href="index.html#resources" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Resources</a>
+                    <a href="index.html#add-subject" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Add Subject</a>
+                    <div class="relative ml-4 group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
+                        <a href="Follow.html#home">
+                        <button class="contact-btn px-4 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-sm font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300">
+                            <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Connect</span>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <div class="flex md:hidden">
+                    <button id="mobile-menu-button" class="relative w-10 h-10 focus:outline-none group" aria-label="Toggle menu">
+                        <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+                            <span class="block h-0.5 w-5 bg-cyan-400 mb-1 transform transition duration-300 ease-in-out" id="line1"></span>
+                            <span class="block h-0.5 w-5 bg-cyan-400 mb-1 transform transition duration-300 ease-in-out" id="line2"></span>
+                            <span class="block h-0.5 w-5 bg-cyan-400 transform transition duration-300 ease-in-out" id="line3"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="pt-2 pb-4 space-y-1">
+                    <a href="index.html#home" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Home</a>
+                    <a href="index.html#about" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">About</a>
+                    <a href="index.html#services" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Services</a>
+                    <a href="index.html#resources" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Resources</a>
+                    <a href="index.html#add-subject" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Add Subject</a>
+                    <div class="px-4 pt-2">
+                        <a href="Follow.html#home">
+                        <button class="contact-btn w-full px-4 py-2 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2 hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
+                            <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Connect</span>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <div class="flex flex-col items-center justify-center text-center pt-24">
+  <!-- Main Title -->
+  <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent pb-2">
+    FazLearn
+  </h1>
+
+  <!-- Typing effect text -->
+  <p id="typing" class="typing text-lg md:text-xl text-gray-300 mt-2"></p>
+  </div>
+
+  <script>
+  const paragraphs = [
+    `FazLearn is an initiative designed with a simple mission - to make engineering education more accessible, organized, and student-friendly. We understand the challenges faced by students when it comes to finding reliable resources at the right time. Syllabus confusion, scattered notes, and hours wasted in searching for the best video lectures often slow down the learning journey. FazLearn solves this by bringing together everything a student needs in one dedicated platform.`,
+
+    `At FazLearn, students can explore well-structured notes that cover every subject in a clear and exam-oriented manner. These notes are prepared to help students grasp concepts faster, revise effectively, and perform confidently in exams. In addition to notes, FazLearn provides carefully selected YouTube playlists that serve as visual learning companions. Instead of spending valuable study hours searching for the right video, students can directly access playlists that are relevant, trustworthy, and syllabus-based.`,
+
+    `Another important feature of FazLearn is the detailed syllabus coverage for every semester and year of engineering. Having the syllabus at your fingertips helps in planning your studies, setting priorities, and tracking progress without confusion. Whether it is the foundation subjects of the first year or the advanced topics of the final year, FazLearn keeps everything neatly organized, year-wise and subject-wise.`,
+
+    `The vision behind FazLearn is not only to provide resources but also to create a supportive academic environment. It is built by students, for students - keeping in mind the real struggles and time constraints of engineering life. By reducing the gap between students and authentic resources, FazLearn aims to save time, boost efficiency, and encourage smarter learning.`,
+
+    `In short, FazLearn is more than just a study resource hub - it is a companion for every engineering student who wants to learn better, revise faster, and achieve success with confidence.`
+  ];
+
+  let paragraphIndex = 0;
+  let wordIndex = 0;
+  const typingElement = document.getElementById("typing");
+
+  function typeWord() {
+    if (paragraphIndex < paragraphs.length) {
+      const words = paragraphs[paragraphIndex].split(" ");
+
+      if (wordIndex < words.length) {
+        typingElement.innerHTML += words[wordIndex] + " ";
+        wordIndex++;
+        setTimeout(typeWord, 20); // typing speed
+      } else {
+        typingElement.innerHTML += "<br><br>"; // space between paragraphs
+        wordIndex = 0;
+        paragraphIndex++;
+        setTimeout(typeWord, 400); // delay before next paragraph
+      }
+    }
+  }
+
+  typeWord();
+</script>
+<script src="FazLearn.js"></script>
+</body>
+</html>
